@@ -1,0 +1,280 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* MAIN CONTAINER */
+
+.container {
+    background-color: #f2f2f2;
+    width: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+/* FIRST SECTION */
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 35px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    margin-top: 5px;
+    margin-left: 20px;
+    justify-content: center;
+    width: 50%;
+}
+
+.image-container {
+    width: 50%;
+    height: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+/* SHOP BUTTON */
+
+#shop-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    width: 150px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+/* SPECIALITIES */
+
+.speciality {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.speciality > h1 {
+    margin-bottom: 5px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 0;
+}
+
+.speciality-item {
+    flex: 1;
+}
+
+.speciality-item h1 {
+    margin-bottom: 10px;
+}
+
+.speciality-item h3 {
+    margin: 10px 0;
+}
+
+.speciality-item p {
+    line-height: 1.5;
+}
+
+
+/* GREEN TESTIMONIAL SECTION */
+
+.container2 {
+    background-color: #1f6c49;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.image-container2 {
+    width: 45%;
+    height: 220px;
+    padding: 20px;
+}
+
+.image-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.text-container2 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.3;
+
+    width: 55%;
+    margin-right: 20px;
+}
+
+.bestsellers {
+    margin: 35px 20px 30px 20px;
+}
+
+.bestsellers > h1 {
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.chair-items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.chair-card {
+    position: relative;
+    background-color: white;
+    flex: 1;
+    min-width: 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px green;
+}
+
+.chair-image {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.chair-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.chair-details {
+    padding: 15px;
+}
+
+.chair-details h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.chair-details p {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.price-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.price-button h3 {
+    margin: 0;
+}
+
+.price-button button {
+    background-color: #1f9d78;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.price-button button:hover {
+    background-color: #176f55;
+}
+.sale {
+    background-color: yellow;
+    color: black;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    top: -25px;
+    right: -10px;
+    font-weight: 700;
+    z-index: 3;
+}
+.rating {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.rating span {
+    color: #555;
+    margin-left: 5px;
+}
+.chatbot {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 260px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    background-color: #1f6c49;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+.chatbot-body {
+    padding: 10px 15px;
+    height: 100px;
+    font-size: 14px;
+}
+
+.chatbot input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    border-top: 1px solid #ddd;
+    outline: none;
+}
